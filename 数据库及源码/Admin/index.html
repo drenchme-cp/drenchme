@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>计算机网络在线课堂</title>
+	 
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+
+		<!-- Ion Icons -->
+		<link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+		
+		<!-- C3 CSS -->
+		<link href="css/c3/c3.css" rel="stylesheet" />
+
+		<!-- NVD3 CSS -->
+		<link href="css/nvd3/nv.d3.css" rel="stylesheet" />
+
+		<!-- Horizontal bar CSS -->
+		<link href="css/horizontal-bar/chart.css" rel="stylesheet" />
+
+		<!-- Calendar Heatmap CSS -->
+		<link href="css/heatmap/cal-heatmap.css" rel="stylesheet" />
+
+		<!-- Circliful CSS -->
+		<link rel="stylesheet" href="css/circliful/circliful.css" />
+
+		<!-- OdoMeter CSS -->
+		<link rel="stylesheet" href="css/odometer.css" />
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!-- Header starts -->
+		<header>
+
+			<!-- Logo starts -->
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="Arise Admin Dashboard Logo" />
+			</a>
+			<!-- Logo ends -->
+
+			<!-- Header actions starts -->
+			<ul id="header-actions" class="clearfix">
+				
+				
+				<li class="list-box user-admin hidden-xs dropdown">
+					<div class="admin-details">
+					
+						<div class="designation">教师</div>
+					</div>
+					 
+					<ul class="dropdown-menu sm">
+						<li class="dropdown-content">
+					 
+							<a href="../Login.aspx">注销</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button type="button" id="toggleMenu" class="toggle-menu">
+						<i class="collapse-menu-icon"></i>
+					</button>
+				</li>
+			</ul>
+			<!-- Header actions ends -->
+
+			<div class="custom-search hidden-sm hidden-xs">
+			 
+			</div>
+		</header>
+		<!-- Header ends -->
+
+		<!-- Left sidebar start -->
+		<div class="vertical-nav">
+
+			<!-- Collapse menu starts -->
+			<button class="collapse-menu">
+				<i class="icon-menu2"></i>
+			</button>
+ 
+			<!-- Sidebar menu start -->
+			<ul class="menu clearfix">
+				<li class="active selected">
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">导航菜单</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">系统管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='AddAdmin.aspx' target="manin">添加账号</a>
+						</li>
+						<li>
+							<a href='AdminList.aspx' target="manin">修改账号</a>
+						</li>
+						<li>
+							<a href='ModifyPwd.aspx' target="manin">修改登录密码</a>
+						</li>
+						 
+					</ul>
+				</li>
+			 
+				 <li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">用户信息管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='UserList.aspx' target="manin">用户信息管理</a>
+						</li>
+					 
+						 
+					</ul>
+				</li><li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">新闻公告管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+					 
+							<li>
+							<a href='AddNews.aspx' target="manin">添加新闻公告</a>
+						</li>
+						<li>
+							<a href='NewsList.aspx' target="manin">新闻公告管理</a>
+						</li>
+						 
+					</ul>
+				</li> 
+				
+					 <li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">教学视频管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='AddVideo.aspx' target="manin">上传教学视频</a>
+						</li>
+						<li>
+							<a href='VideoList.aspx' target="manin">教学视频管理</a>
+						</li>
+						 
+						 
+					</ul>
+				</li>
+				 <li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">课件管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='AddFile.aspx' target="manin">添加课件</a>
+						</li>
+						<li>
+							<a href='FileManger.aspx' target="manin">课件管理</a>
+						</li>
+						 
+						 
+					</ul>
+				</li><li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">测试信息管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+							<li>
+							<a href='AddTiMu.aspx' target="manin">添加试题</a>
+						</li>
+						<li>
+							<a href='TiMuLists.aspx' target="manin">试题信息管理</a>
+						</li>
+						 
+						 
+						 <li>
+							<a href='AddPage.aspx' target="manin">生成试卷</a>
+						</li>
+						<li>
+							<a href='PageManger.aspx' target="manin">试卷信息管理</a>
+						</li>
+						
+						<li>
+							<a href='ScoreManger.aspx' target="manin">测试成绩管理</a>
+						</li>
+					</ul>
+				</li><li>
+					<a href="#">
+					<i class="icon-layout5"></i>
+						<span class="menu-item">在线交流管理</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+								<li>
+							<a href='BBSManger.aspx' target="manin">主题信息管理</a>
+						</li>
+						 <li>
+							<a href='BBSReplayManger.aspx' target="manin">回复管理</a>
+						</li>
+						 
+					</ul>
+				</li>  
+				
+			 
+			</ul>
+			<!-- Sidebar menu snd -->
+		</div>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper dashboard-wrapper-lg" style="width: 1000px">
+ <iframe scrolling="yes" frameborder="0" name="manin" width=100%  height=900 src="admin_main.aspx"></iframe>
+			<!-- Container fluid Starts -->
+		 
+			<!-- Container fluid ends -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- Footer Start -->
+		<footer style="font-family:'Microsoft Yahei'; text-align:center;">
+			&copy; 2018 计算机网络在线课堂&nbsp;&nbsp; &nbsp;&nbsp; 
+		</footer>
+        &nbsp; &nbsp;&nbsp; &nbsp;<!-- Footer end -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Sparkline Graphs -->
+		<!-- <script src="js/sparkline/sparkline.js"></script> -->
+		<script src="js/sparkline/retina.js"></script>
+		<script src="js/sparkline/custom-sparkline.js"></script>
+		
+		<!-- jquery ScrollUp JS -->
+		<script src="js/scrollup/jquery.scrollUp.js"></script>
+
+		<!-- D3 JS -->
+		<script src="js/d3/d3.v3.min.js"></script>
+
+		<!-- D3 Power Gauge -->
+		<script src="js/d3/d3.powergauge.js"></script>
+
+		<!-- D3 Meter Gauge Chart -->
+		<script src="js/d3/gauge.js"></script>
+		<script src="js/d3/gauge-custom.js"></script>
+		
+		<!-- C3 Graphs -->
+		<script src="js/c3/c3.min.js"></script>
+		<script src="js/c3/c3.custom.js"></script>
+
+		<!-- NVD3 JS -->
+		<script src="js/nvd3/nv.d3.js"></script>
+		<script src="js/nvd3/nv.d3.custom.boxPlotChart.js"></script>
+		<script src="js/nvd3/nv.d3.custom.stackedAreaChart.js"></script>
+
+		<!-- Horizontal Bar JS -->
+		<script src="js/horizontal-bar/horizBarChart.min.js"></script>
+		<script src="js/horizontal-bar/horizBarCustom.js"></script>
+
+		<!-- Gauge Meter JS -->
+		<script src="js/gaugemeter/gaugeMeter-2.0.0.min.js"></script>
+		<script src="js/gaugemeter/gaugemeter.custom.js"></script>
+
+		<!-- Calendar Heatmap JS -->
+		<script src="js/heatmap/cal-heatmap.min.js"></script>
+		<script src="js/heatmap/cal-heatmap.custom.js"></script>
+
+		<!-- Odometer JS -->
+		<script src="js/odometer/odometer.min.js"></script>
+		<script src="js/odometer/custom-odometer.js"></script>
+
+		<!-- Peity JS -->
+		<script src="js/peity/peity.min.js"></script>
+		<script src="js/peity/custom-peity.js"></script>
+
+		<!-- Circliful js -->
+		<script src="js/circliful/circliful.min.js"></script>
+		<script src="js/circliful/circliful.custom.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>
+</html>
